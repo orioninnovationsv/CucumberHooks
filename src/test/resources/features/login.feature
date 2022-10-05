@@ -1,3 +1,4 @@
+@wip
 Feature: Login feature
 
   @login
@@ -7,4 +8,13 @@ Feature: Login feature
     And user enter username and password
     Then verify that unsuccessful login
 
+  @smoke
+  Scenario: navigate category
+    Given User on the trendyol website
+    When user navigate "Çocuk"
 
+
+  @subCategory
+  Scenario: navigate category
+    Given User on the trendyol website
+    When user navigate "Elbise" from "Çocuk"
